@@ -1,0 +1,3 @@
+# /en est un alias de la racine (EN = langue par défaut)
+/en/* /:splat 301
+/en / 301

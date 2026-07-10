@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="2280" viewBox="0 0 1080 2280" role="img" aria-label="Screenshot placeholder">
+  <rect width="1080" height="2280" fill="#EFE9DC"/>
+  <rect x="24" y="24" width="1032" height="2232" fill="none" stroke="#D8CFBA" stroke-width="4" stroke-dasharray="16 12" rx="48"/>
+  <g fill="#8A8070" font-family="Georgia, serif" text-anchor="middle">
+    <rect x="240" y="820" width="600" height="440" fill="#E2DAC7" rx="24"/>
+    <rect x="290" y="880" width="500" height="14" fill="#CBC1A9" rx="7"/>
+    <rect x="290" y="930" width="500" height="14" fill="#CBC1A9" rx="7"/>
+    <rect x="290" y="980" width="500" height="14" fill="#CBC1A9" rx="7"/>
+    <rect x="290" y="1030" width="500" height="14" fill="#CBC1A9" rx="7"/>
+    <rect x="290" y="1080" width="380" height="14" fill="#CBC1A9" rx="7"/>
+    <text x="540" y="1400" font-size="56">S1 — Reading page</text>
+    <text x="540" y="1480" font-size="40">s1-reading-en.png / s1-reading-fr.png</text>
+    <text x="540" y="1550" font-size="40">1080×2280 · PNG/WebP · &lt; 300 KB</text>
+  </g>
+</svg>

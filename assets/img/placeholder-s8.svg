@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="2280" viewBox="0 0 1080 2280" role="img" aria-label="Screenshot placeholder">
+  <rect width="1080" height="2280" fill="#EFE9DC"/>
+  <rect x="24" y="24" width="1032" height="2232" fill="none" stroke="#D8CFBA" stroke-width="4" stroke-dasharray="16 12" rx="48"/>
+  <g fill="#8A8070" font-family="Georgia, serif" text-anchor="middle">
+    <rect x="140" y="620" width="800" height="1040" fill="#E2DAC7" rx="24"/>
+    <rect x="220" y="720" width="640" height="12" fill="#CBC1A9" rx="6"/>
+    <rect x="220" y="780" width="640" height="12" fill="#CBC1A9" rx="6"/>
+    <rect x="220" y="840" width="640" height="12" fill="#CBC1A9" rx="6"/>
+    <rect x="220" y="900" width="640" height="12" fill="#CBC1A9" rx="6"/>
+    <rect x="220" y="960" width="640" height="12" fill="#CBC1A9" rx="6"/>
+    <rect x="220" y="1020" width="640" height="12" fill="#CBC1A9" rx="6"/>
+    <rect x="220" y="1080" width="480" height="12" fill="#CBC1A9" rx="6"/>
+    <text x="540" y="1800" font-size="56">S8 — Distraction-free mode</text>
+    <text x="540" y="1880" font-size="40">s8-focus-en.png / s8-focus-fr.png</text>
+    <text x="540" y="1950" font-size="40">1080×2280 · PNG/WebP · &lt; 300 KB</text>
+  </g>
+</svg>

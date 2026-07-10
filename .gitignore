@@ -1,0 +1,13 @@
+# Specs internes et assets sources — jamais publiés ni poussés
+specs/
+
+# IDE / outillage local
+.idea/
+*.iml
+.claude/
+
+# OS
+.DS_Store
+
+# Node (aucune dépendance attendue, par sécurité)
+node_modules/

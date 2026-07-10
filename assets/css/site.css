@@ -1,0 +1,344 @@
+/* ==========================================================================
+   Quran's Pages / Pages du Coran — site vitrine
+   Design system repris de l'app : papier chaud, encre, teal sobre, serif.
+   ========================================================================== */
+
+/* ---- Fonts (self-hosted, aucune requête tierce) ------------------------- */
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 200 900; /* fonte variable */
+  font-display: swap;
+  src: url("../fonts/source-serif-4-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: italic;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("../fonts/source-serif-4-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+20AC, U+2122, U+2212, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Amiri";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/amiri-arabic.woff2") format("woff2");
+  unicode-range: U+0600-06FF, U+0750-077F, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+/* ---- Tokens -------------------------------------------------------------- */
+:root {
+  --surface: #faf6ee;      /* papier chaud */
+  --surface-alt: #fffdf7;  /* sections alternées */
+  --ink: #2a2622;
+  --ink-muted: #6b6357;
+  --accent: #2e6e6a;       /* teal sobre */
+  --accent-dark: #245a56;
+  --divider: #e7decb;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --arabic: "Amiri", "Noto Naskh Arabic", serif;
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s6: 24px; --s8: 32px;
+  --s12: 48px; --s16: 64px; --s24: 96px;
+  --measure: 68ch;
+  --radius: 12px;
+}
+
+/* ---- Reset minimal -------------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+img, video, svg { display: block; max-width: 100%; height: auto; }
+
+/* ---- Base ----------------------------------------------------------------- */
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--serif);
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--surface);
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { line-height: 1.2; font-weight: 600; text-wrap: balance; }
+h1 { font-size: clamp(2rem, 5vw, 3.25rem); }
+h2 { font-size: clamp(1.5rem, 3.5vw, 2.125rem); }
+h3 { font-size: 1.25rem; }
+p { max-width: var(--measure); }
+a { color: var(--accent); text-underline-offset: 3px; }
+a:hover { color: var(--accent-dark); }
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+::selection { background: var(--accent); color: #fff; }
+
+.wrap {
+  max-width: 1080px;
+  margin-inline: auto;
+  padding-inline: var(--s6);
+}
+
+/* Lien d'évitement (a11y) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--accent);
+  color: #fff;
+  padding: var(--s3) var(--s4);
+  z-index: 100;
+}
+.skip-link:focus { left: 0; color: #fff; }
+
+/* ---- Header ---------------------------------------------------------------- */
+.site-header {
+  border-bottom: 1px solid var(--divider);
+  background: var(--surface);
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+  min-height: 72px;
+  flex-wrap: wrap;
+  padding-block: var(--s3);
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--s3);
+  text-decoration: none;
+  color: var(--ink);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-right: auto;
+  min-height: 44px;
+}
+.brand img { width: 40px; height: 40px; border-radius: 9px; }
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: var(--s2);
+  flex-wrap: wrap;
+}
+.site-nav a {
+  text-decoration: none;
+  color: var(--ink-muted);
+  padding: var(--s3) var(--s3);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: var(--radius);
+}
+.site-nav a:hover { color: var(--ink); background: var(--divider); }
+.lang-switch {
+  border: 1px solid var(--divider);
+  border-radius: 999px;
+  padding: var(--s1);
+  display: inline-flex;
+  gap: var(--s1);
+  margin-left: var(--s3);
+}
+.lang-switch a, .lang-switch span {
+  min-width: 44px;
+  min-height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+.lang-switch span[aria-current] { background: var(--accent); color: #fff; }
+.lang-switch a { color: var(--ink-muted); }
+.lang-switch a:hover { background: var(--divider); color: var(--ink); }
+
+/* ---- Hero ------------------------------------------------------------------- */
+.hero { padding-block: var(--s16) var(--s24); }
+.hero .wrap {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: var(--s12);
+  align-items: center;
+}
+.hero-copy > * + * { margin-top: var(--s6); }
+.hero .kicker {
+  font-family: var(--arabic);
+  font-size: 1.5rem;
+  color: var(--accent);
+  text-align: left; /* wordmark RTL aligné sur le bloc LTR */
+}
+.hero .lede {
+  font-size: 1.25rem;
+  color: var(--ink-muted);
+}
+.reassure {
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+
+/* Badges stores — « Bientôt disponible » (désactivés volontairement) */
+.store-badges {
+  display: flex;
+  gap: var(--s3);
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.badge-soon {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 56px;
+  min-width: 168px;
+  padding: var(--s2) var(--s4);
+  border: 1px solid var(--divider);
+  border-radius: var(--radius);
+  background: #f1ece0;
+  color: var(--ink-muted);
+  cursor: not-allowed;
+  user-select: none;
+}
+.badge-soon .store { font-weight: 600; font-size: 1rem; }
+.badge-soon .soon { font-size: 0.8125rem; }
+
+/* Mockup téléphone */
+.phone {
+  border: 10px solid var(--ink);
+  border-radius: 44px;
+  background: var(--ink);
+  box-shadow: 0 24px 48px -24px rgba(42, 38, 34, 0.35);
+  overflow: hidden;
+  max-width: 320px;
+  margin-inline: auto;
+}
+.phone > video, .phone > img { aspect-ratio: 1080 / 2280; object-fit: cover; width: 100%; }
+
+/* ---- Sections ------------------------------------------------------------------ */
+.section { padding-block: var(--s24); }
+.section-alt { background: var(--surface-alt); border-block: 1px solid var(--divider); }
+.section .wrap > * + * { margin-top: var(--s6); }
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--s12);
+  align-items: center;
+}
+.split > div > * + * { margin-top: var(--s4); }
+.section h2 + p.lead { font-size: 1.1875rem; color: var(--ink-muted); }
+
+.points { list-style: none; padding: 0; display: grid; gap: var(--s6); }
+.points li { max-width: var(--measure); }
+.points strong { display: block; margin-bottom: var(--s1); }
+.points li::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 3px;
+  background: var(--accent);
+  border-radius: 2px;
+  margin-bottom: var(--s3);
+}
+
+/* Bandeau vie privée */
+.privacy-band { text-align: center; }
+.privacy-band .wrap > * { margin-inline: auto; }
+.privacy-band h2 { color: var(--accent-dark); }
+
+/* CTA final */
+.cta-final { text-align: center; }
+.cta-final .store-badges { justify-content: center; }
+.cta-final .wrap > * { margin-inline: auto; }
+
+/* ---- Footer ------------------------------------------------------------------- */
+.site-footer {
+  border-top: 1px solid var(--divider);
+  padding-block: var(--s12);
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+}
+.site-footer .wrap { display: grid; gap: var(--s6); }
+.footer-nav {
+  display: flex;
+  gap: var(--s4);
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.footer-nav a {
+  color: var(--ink-muted);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.footer-nav a:hover { color: var(--ink); }
+.footer-note { font-style: italic; }
+
+/* ---- Pages intérieures (légal / support) ----------------------------------------- */
+.page { padding-block: var(--s16); }
+.page .wrap { max-width: 760px; }
+.page .wrap > * + * { margin-top: var(--s6); }
+.page h2 { margin-top: var(--s12); }
+.page .updated { color: var(--ink-muted); font-size: 0.9375rem; }
+.page ul { padding-left: 1.2em; max-width: var(--measure); }
+.page li + li { margin-top: var(--s2); }
+
+/* FAQ */
+.faq details {
+  border: 1px solid var(--divider);
+  border-radius: var(--radius);
+  padding: var(--s4) var(--s6);
+  background: var(--surface-alt);
+}
+.faq details + details { margin-top: var(--s3); }
+.faq summary {
+  font-weight: 600;
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+.faq details[open] summary { margin-bottom: var(--s3); }
+
+/* ---- Page 404 ------------------------------------------------------------------- */
+.error-page {
+  min-height: 70vh;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  gap: var(--s6);
+  padding: var(--s8);
+}
+
+/* ---- Animations d'apparition (JS ajoute .visible) --------------------------------- */
+.reveal { opacity: 0; transform: translateY(14px); }
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+/* Sans JS ou si mouvement réduit : tout est visible, aucune animation */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+.no-js .reveal { opacity: 1; transform: none; }
+
+/* ---- Responsive -------------------------------------------------------------------- */
+@media (max-width: 860px) {
+  .hero { padding-block: var(--s12) var(--s16); }
+  .hero .wrap, .split { grid-template-columns: 1fr; }
+  .hero .phone { max-width: 260px; }
+  .section { padding-block: var(--s16); }
+  .split .phone { order: -1; }
+}
+@media (max-width: 480px) {
+  .site-header .wrap { justify-content: center; }
+  .brand { margin-right: 0; }
+}

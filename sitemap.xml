@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://quran.bdzapps.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quran.bdzapps.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://quran.bdzapps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quran.bdzapps.com/"/>
+  </url>
+  <url>
+    <loc>https://quran.bdzapps.com/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quran.bdzapps.com/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://quran.bdzapps.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quran.bdzapps.com/"/>
+  </url>
+  <url>
+    <loc>https://quran.bdzapps.com/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quran.bdzapps.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://quran.bdzapps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quran.bdzapps.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://quran.bdzapps.com/fr/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quran.bdzapps.com/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://quran.bdzapps.com/fr/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quran.bdzapps.com/privacy/"/>
+  </url>
+  <url>
+    <loc>https://quran.bdzapps.com/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quran.bdzapps.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://quran.bdzapps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quran.bdzapps.com/support/"/>
+  </url>
+  <url>
+    <loc>https://quran.bdzapps.com/fr/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quran.bdzapps.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://quran.bdzapps.com/fr/support/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quran.bdzapps.com/support/"/>
+  </url>
+  <url>
+    <loc>https://quran.bdzapps.com/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quran.bdzapps.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://quran.bdzapps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quran.bdzapps.com/terms/"/>
+  </url>
+  <url>
+    <loc>https://quran.bdzapps.com/fr/terms/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://quran.bdzapps.com/terms/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://quran.bdzapps.com/fr/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://quran.bdzapps.com/terms/"/>
+  </url>
+</urlset>

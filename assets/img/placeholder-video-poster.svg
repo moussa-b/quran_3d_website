@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="2280" viewBox="0 0 1080 2280" role="img" aria-label="Video placeholder">
+  <rect width="1080" height="2280" fill="#EFE9DC"/>
+  <rect x="24" y="24" width="1032" height="2232" fill="none" stroke="#D8CFBA" stroke-width="4" stroke-dasharray="16 12" rx="48"/>
+  <g fill="#8A8070" font-family="Georgia, serif" text-anchor="middle">
+    <circle cx="540" cy="1040" r="110" fill="#E2DAC7"/>
+    <path d="M500 980 L620 1040 L500 1100 Z" fill="#8A8070"/>
+    <text x="540" y="1260" font-size="56">V1 — 3D page curl video</text>
+    <text x="540" y="1340" font-size="40">hero-curl-en.mp4 / hero-curl-fr.mp4</text>
+    <text x="540" y="1410" font-size="40">MP4 + WebM · muted · loop · ≤ 6 s</text>
+    <text x="540" y="1480" font-size="40">poster: hero-curl-poster.jpg · 1080×2280</text>
+  </g>
+</svg>
