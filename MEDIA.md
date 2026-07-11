@@ -30,6 +30,7 @@ Issues de `store-assets/android/phone/`, redimensionnées pour le web.
 |---|---|---|---|
 | `screen-reading-en.png` / `-fr` | Page de lecture mushaf plein écran, Tajweed couleur (store `S1.png`) | Section « Lecture immersive » des 2 accueils | ✅ fourni |
 | `screen-surahs-en.png` / `-fr` | Liste des sourates (navigation) (store `S2.png`) | Section « Un vrai mushaf, partout » des 2 accueils | ✅ fourni |
+| `tablet-spread-en.jpg` / `-fr` | Double page paysage tablette (store `tablet/S1.png`, JPEG 1100×687 < 310 Ko) | Section « Pensée aussi pour les tablettes » des 2 accueils | ✅ fourni |
 
 Captures store en réserve (non placées, disponibles dans
 `store-assets/android/phone/{en,fr}/S3–S6.png`) : recherche/aller à,

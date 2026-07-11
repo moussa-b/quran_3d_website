@@ -219,6 +219,23 @@ a:hover { color: var(--accent-dark); }
 }
 .phone > video, .phone > img { aspect-ratio: 1080 / 2280; object-fit: cover; width: 100%; }
 
+/* Mockup tablette (paysage, double page) */
+.tablet {
+  border: 12px solid var(--ink);
+  border-radius: 22px;
+  background: var(--ink);
+  box-shadow: 0 24px 48px -24px rgba(42, 38, 34, 0.35);
+  overflow: hidden;
+  max-width: 720px;
+  margin-inline: auto;
+}
+.tablet > img { aspect-ratio: 1100 / 687; object-fit: contain; width: 100%; }
+
+/* Section tablette : titre centré + image large dessous */
+.tablet-section { text-align: center; }
+.tablet-section .wrap > * { margin-inline: auto; }
+.tablet-section .lead { max-width: var(--measure); }
+
 /* ---- Sections ------------------------------------------------------------------ */
 .section { padding-block: var(--s24); }
 .section-alt { background: var(--surface-alt); border-block: 1px solid var(--divider); }
