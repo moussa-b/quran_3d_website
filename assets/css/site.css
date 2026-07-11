@@ -234,7 +234,7 @@ a:hover { color: var(--accent-dark); }
 /* Section tablette : titre centré + image large dessous */
 .tablet-section { text-align: center; }
 .tablet-section .wrap > * { margin-inline: auto; }
-.tablet-section .lead { max-width: var(--measure); }
+.tablet-section .lead { max-width: var(--measure); margin-inline: auto; }
 
 /* ---- Sections ------------------------------------------------------------------ */
 .section { padding-block: var(--s24); }
