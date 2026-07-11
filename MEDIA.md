@@ -22,30 +22,29 @@ Règles transverses :
 Si l'habillage de l'app (barres, boutons) n'est pas visible dans le cadre,
 une seule variante de la vidéo suffit : la référencer alors dans les deux pages.
 
-## Captures téléphone (1080×2280, PNG/WebP, < 300 Ko)
+## Captures téléphone placées (358×800, PNG, < 300 Ko)
 
-| ID | Fichiers attendus | Contenu | Emplacement | Statut |
-|---|---|---|---|---|
-| **S1** (requise) | `s1-reading-en.png` / `s1-reading-fr.png` | Page de lecture plein écran, Tajweed couleur (Hafs) | Section « Un vrai mushaf, partout » des 2 accueils | ⛔ manquant |
-| S8 (optionnelle) | `s8-focus-en.png` / `s8-focus-fr.png` | Mode sans distraction, plein écran total | Section « Lecture immersive » des 2 accueils | ⛔ manquant |
-| S2 (réserve) | `s2-surahs-en.png` / `-fr` | Liste des sourates | Non placé | — |
-| S3 (réserve) | `s3-goto-en.png` / `-fr` | Recherche / aller à | Non placé | — |
-| S4 (réserve) | `s4-home-en.png` / `-fr` | Accueil « Continuer la lecture » | Non placé | — |
-| S5 (réserve) | `s5-download-en.png` / `-fr` | Dialogue de téléchargement | Non placé | — |
-| S6 (réserve) | `s6-downloads-en.png` / `-fr` | Réglages → Téléchargements | Non placé | — |
+Issues de `store-assets/android/phone/`, redimensionnées pour le web.
+
+| Fichier | Contenu | Emplacement | Statut |
+|---|---|---|---|
+| `screen-reading-en.png` / `-fr` | Page de lecture mushaf plein écran, Tajweed couleur (store `S1.png`) | Section « Lecture immersive » des 2 accueils | ✅ fourni |
+| `screen-surahs-en.png` / `-fr` | Liste des sourates (navigation) (store `S2.png`) | Section « Un vrai mushaf, partout » des 2 accueils | ✅ fourni |
+
+Captures store en réserve (non placées, disponibles dans
+`store-assets/android/phone/{en,fr}/S3–S6.png`) : recherche/aller à,
+téléchargements, etc. — utiles si la page s'étoffe.
 
 ## Captures tablette (2048×1536, mêmes règles)
 
 Même nomenclature avec suffixe `-tablet`, ex. `s1-reading-fr-tablet.png`.
 Aucune n'est placée aujourd'hui (page épurée) ; utiles si le site s'étoffe.
 
-## Placeholders actuellement en place
+## Placeholder encore en place
 
 | Fichier | Rôle |
 |---|---|
-| `assets/img/placeholder-video-poster.svg` | Tient la place de V1 dans le hero |
-| `assets/img/placeholder-s1.svg` | Tient la place de S1 |
-| `assets/img/placeholder-s8.svg` | Tient la place de S8 |
+| `assets/img/placeholder-video-poster.svg` | Tient la place de la vidéo V1 dans le hero (à remplacer) |
 
 ## Déjà fournis (finaux)
 

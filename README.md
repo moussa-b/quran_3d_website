@@ -53,9 +53,8 @@ Rollback : dashboard Pages → Deployments → « Rollback to this deployment »
 
 | Quoi | Où | Statut |
 |---|---|---|
-| Vidéo V1 du pli 3D (+ posters) | hero de `/` et `/fr/` — voir le commentaire `MEDIA:` dans le HTML | ⛔ manquant |
-| Capture S1 (page de lecture) | section « Un vrai mushaf » des 2 accueils | ⛔ manquant |
-| Capture S8 (mode sans distraction) | section « Lecture immersive » des 2 accueils | ⛔ optionnelle |
+| Vidéo V1 du pli 3D (+ posters) | hero de `/` et `/fr/` — voir le commentaire `MEDIA:` dans le HTML | ⛔ manquant (placeholder SVG) |
+| Captures téléphone (lecture + sourates) | sections des 2 accueils | ✅ fournies (vraies captures) |
 | URLs stores réelles | badges « Bientôt disponible » des 2 accueils (hero + CTA final) | ⛔ en attente de publication |
 
 Le détail complet (dimensions, formats, noms de fichiers) est dans
