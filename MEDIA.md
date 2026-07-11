@@ -16,12 +16,12 @@ Règles transverses :
 
 | ID | Fichiers | Specs | Emplacement | Statut |
 |---|---|---|---|---|
-| **V1** | `hero-curl.mp4` (0,78 Mo) + `hero-curl.webm` (0,73 Mo) + `hero-curl-poster.jpg` | 606×1280, muet (piste audio supprimée), boucle, 10 s (source `store-assets/android/phone/video.mp4` coupée 1 s→11 s) | Hero de `index.html` et `fr/index.html` | ✅ fourni |
+| **V1** | `hero-curl.mp4` (0,72 Mo) + `hero-curl.webm` (0,59 Mo) + `hero-curl-poster.jpg` | 606×1280, muet (piste audio supprimée), boucle, 9 s (source `store-assets/android/phone/video.mp4` coupée 1 s→10 s) | Hero de `index.html` et `fr/index.html` | ✅ fourni |
 | V2 (optionnel) | `tablet-curl.mp4` | Tablette paysage, double page | Non placé (page volontairement épurée) — utilisable plus tard | ⛔ optionnel |
 
 Une seule variante de langue : le cadre ne montre que la page du mushaf
 (aucun habillage d'interface), donc le même fichier sert `/` et `/fr/`.
-Régénération : `ffmpeg -ss 1 -to 11 -i video.mp4 -an -c:v libx264 -crf 26 …`
+Régénération : `ffmpeg -ss 1 -to 10 -i video.mp4 -an -c:v libx264 -crf 26 …`
 
 ## Captures téléphone placées (358×800, PNG, < 300 Ko)
 
