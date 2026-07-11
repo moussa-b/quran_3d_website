@@ -5,7 +5,14 @@
   "use strict";
   document.documentElement.classList.remove("no-js");
 
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    // Mouvement réduit : stopper l'autoplay des vidéos, le poster reste affiché
+    document.querySelectorAll("video[autoplay]").forEach(function (v) {
+      v.pause();
+      v.removeAttribute("autoplay");
+    });
+    return;
+  }
   if (!("IntersectionObserver" in window)) {
     document.querySelectorAll(".reveal").forEach(function (el) {
       el.classList.add("visible");

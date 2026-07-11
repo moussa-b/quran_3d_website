@@ -14,13 +14,14 @@ Règles transverses :
 
 ## Vidéo
 
-| ID | Fichiers attendus | Specs | Emplacement | Statut |
+| ID | Fichiers | Specs | Emplacement | Statut |
 |---|---|---|---|---|
-| **V1** (requis) | `hero-curl-en.mp4` + `hero-curl-en.webm` + `hero-curl-poster-en.jpg` et variantes `-fr` | 1080×2280 (9:19), muet, boucle, ≤ 6 s, H.264 + WebM | Hero de `index.html` et `fr/index.html` | ⛔ manquant |
-| V2 (optionnel) | `tablet-curl-en.mp4` (+`-fr` si habillage visible) | Tablette paysage, double page | Non placé (page volontairement épurée) — utilisable plus tard | ⛔ optionnel |
+| **V1** | `hero-curl.mp4` (0,78 Mo) + `hero-curl.webm` (0,73 Mo) + `hero-curl-poster.jpg` | 606×1280, muet (piste audio supprimée), boucle, 10 s (source `store-assets/android/phone/video.mp4` coupée 1 s→11 s) | Hero de `index.html` et `fr/index.html` | ✅ fourni |
+| V2 (optionnel) | `tablet-curl.mp4` | Tablette paysage, double page | Non placé (page volontairement épurée) — utilisable plus tard | ⛔ optionnel |
 
-Si l'habillage de l'app (barres, boutons) n'est pas visible dans le cadre,
-une seule variante de la vidéo suffit : la référencer alors dans les deux pages.
+Une seule variante de langue : le cadre ne montre que la page du mushaf
+(aucun habillage d'interface), donc le même fichier sert `/` et `/fr/`.
+Régénération : `ffmpeg -ss 1 -to 11 -i video.mp4 -an -c:v libx264 -crf 26 …`
 
 ## Captures téléphone placées (358×800, PNG, < 300 Ko)
 
@@ -41,11 +42,11 @@ téléchargements, etc. — utiles si la page s'étoffe.
 Même nomenclature avec suffixe `-tablet`, ex. `s1-reading-fr-tablet.png`.
 Aucune n'est placée aujourd'hui (page épurée) ; utiles si le site s'étoffe.
 
-## Placeholder encore en place
+## Placeholders
 
-| Fichier | Rôle |
-|---|---|
-| `assets/img/placeholder-video-poster.svg` | Tient la place de la vidéo V1 dans le hero (à remplacer) |
+Plus aucun : tous les emplacements médias du site sont servis par de vrais
+fichiers. Seules les URLs des stores restent en attente (badges « Bientôt
+disponible »).
 
 ## Déjà fournis (finaux)
 
